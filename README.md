@@ -1,60 +1,136 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Neat_Pro - Tableau de Bord Admin Complet
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-12-orange.svg)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-green.svg)](https://tailwindcss.com)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple.svg)](https://getbootstrap.com)
+[![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## About Laravel
+## 📖 Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**Neat_Pro** est une application Laravel moderne et complète de **tableau de bord d'administration** (Admin Dashboard). Conçue pour gérer efficacement une activité e-commerce/CRM, elle offre une interface intuitive avec :
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Dashboard analytique** avec statistiques en temps réel
+- **Gestion CRM** (clients, commandes)
+- **E-commerce** (produits, transactions)
+- **Analytics** avec graphiques
+- **Notifications** et exports PDF
+- **Gestion utilisateurs** (rôles, authentification sociale)
+- **Support multilingue** : Français 🇫🇷, Anglais 🇺🇸, Arabe 🇦🇪
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Parfait pour les startups, PME ou projets de démonstration. Démo data incluse via seeders !
 
-## Learning Laravel
+## ✨ Fonctionnalités Principales
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+| Module | Description |
+|--------|-------------|
+| 🏠 **Dashboard** | Statistiques globales, graphiques (ventes, revenus) |
+| 👥 **CRM** | Gestion clients & commandes avec recherche/filtres |
+| 🛒 **E-commerce** | Catalogue produits, transactions bancaires |
+| 📊 **Analytics** | Rapports détaillés et visualisations |
+| 🔔 **Notifications** | Système de notifications app |
+| 📋 **Utilisateurs** | Auth (login/register/social), profils, rôles admin/user |
+| 📄 **Exports** | PDF des commandes et rapports |
+| 🌐 **Multilingue** | EN / FR / AR avec middleware |
+| 🔐 **Sécurité** | Laravel Sanctum, rôles middleware |
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Stack Technique
 
-## Laravel Sponsors
+```
+Backend: Laravel 12 • PHP 8.2+ • MySQL/PostgreSQL
+Frontend: TailwindCSS 4 • Bootstrap 5 • Vite • Blade
+Packages: Laravel Socialite • DomPDF • Intervention Image
+Base de données: Eloquent ORM • Migrations • Seeders
+Autres: Jobs/Queues • Cache • Sessions
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Installation & Démarrage Rapide
 
-### Premium Partners
+### Prérequis
+- PHP 8.2+
+- Composer
+- Node.js / npm
+- MySQL ou autre DB supportée
+- Git
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+```bash
+# 1. Cloner le repo
+git clone https://github.com/votre-username/neat_pro.git
+cd neat_pro
 
-## Contributing
+# 2. Installer dépendances PHP
+composer install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# 3. Copier env et générer clé
+cp .env.example .env
+php artisan key:generate
 
-## Code of Conduct
+# 4. Configurer DB dans .env
+# DB_CONNECTION=mysql
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=neat_pro
+# DB_USERNAME=root
+# DB_PASSWORD=
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# 5. Migrer et seed data démo
+php artisan migrate --seed
 
-## Security Vulnerabilities
+# 6. Installer assets JS/CSS
+npm install
+npm run build
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# 7. Lancer le serveur
+php artisan serve
 
-## License
+# 8. Accéder en ligne
+# Ouvrir http://127.0.0.1:8000
+# Admin: admin@neatpro.com / password (via seeder)
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Neat_Pro
+**Compte démo (après seeders):**
+- Email: `admin@neatpro.com`
+- Password: `password`
+
+## 📱 Captures d'Écran
+
+| Dashboard | CRM | E-commerce |
+|-----------|-----|------------|
+| ![Dashboard](./public/screenshots/dashboard.png) | ![CRM](./public/screenshots/crm.png) | ![Ecommerce](./public/screenshots/ecommerce.png) |
+
+*(Ajoutez vos screenshots dans `public/screenshots/`)*
+
+## 🌍 Support Multilingue
+
+- `FR` (défaut)
+- `EN`
+- `AR`
+
+Changer via middleware ou URL paramètre.
+
+## 🤝 Contribution
+
+1. Fork le projet
+2. Créer une branche `feature/XXXX`
+3. Commit vos changements
+4. Push vers la branche
+5. Ouvrir une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence [MIT](LICENSE) - gratuit pour usage commercial/personnel.
+
+## 🙏 Remerciements
+
+- [Laravel](https://laravel.com) - Framework incroyable
+- [TailwindCSS](https://tailwindcss.com) - UI moderne
+- Contributeurs open-source
+
+---
+
+⭐ **Star ce repo si utile !** ⭐
+
+**Auteur:** [Votre Nom]  
+**Contact:** votre-email@example.com  
+**Démos live:** [Lien vers démo]
+
