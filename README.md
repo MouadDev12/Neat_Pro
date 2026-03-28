@@ -92,13 +92,7 @@ php artisan serve
 - Email: `admin@neatpro.com`
 - Password: `password`
 
-## 📱 Captures d'Écran
 
-| Dashboard | CRM | E-commerce |
-|-----------|-----|------------|
-| ![Dashboard](./public/screenshots/dashboard.png) | ![CRM](./public/screenshots/crm.png) | ![Ecommerce](./public/screenshots/ecommerce.png) |
-
-*(Ajoutez vos screenshots dans `public/screenshots/`)*
 
 ## 🌍 Support Multilingue
 
@@ -116,21 +110,5 @@ Changer via middleware ou URL paramètre.
 4. Push vers la branche
 5. Ouvrir une Pull Request
 
-## 📄 Licence
 
-Ce projet est sous licence [MIT](LICENSE) - gratuit pour usage commercial/personnel.
-
-## 🙏 Remerciements
-
-- [Laravel](https://laravel.com) - Framework incroyable
-- [TailwindCSS](https://tailwindcss.com) - UI moderne
-- Contributeurs open-source
-
----
-
-⭐ **Star ce repo si utile !** ⭐
-
-**Auteur:** [Votre Nom]  
-**Contact:** votre-email@example.com  
-**Démos live:** [Lien vers démo]
 
